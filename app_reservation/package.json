@@ -1,0 +1,19 @@
+{
+  "name": "oparc",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node .",
+    "dev": "DEBUG=app:server node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.15",
+    "debug": "^4.3.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "pg": "^8.7.3"
+  }
+}
