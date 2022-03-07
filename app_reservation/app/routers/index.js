@@ -8,7 +8,7 @@ const router = express.Router();
 router.use('/api', apiRouter);
 
 router.use((err, _, response, next) => {
-    errorHandler(err, response, next);
+  errorHandler(err, response, next);
 });
 
 module.exports = router;
