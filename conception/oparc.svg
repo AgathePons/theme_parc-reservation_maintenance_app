@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="677" height="263" view_box="0 0 677 263"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Thu, 21 May 2020 02:34:50</desc>
+
+<rect id="frame" x="0" y="0" width="677" height="263" fill="none" stroke="none" stroke-width="0"/>
+
+<!-- Association impacte -->
+<line x1="559" y1="201" x2="559" y2="71" stroke="#57483d" stroke-width="1"/>
+<text x="564.0" y="140" fill="#57483d" font-family="Courier New" font-size="12">1,1</text>
+<line x1="335" y1="71" x2="559" y2="71" stroke="#57483d" stroke-width="1"/>
+<text x="422" y="87.0" fill="#57483d" font-family="Courier New" font-size="12">0,N</text>
+<g id="association-impacte">
+	<path d="M 654 45 a 14 14 90 0 1 14 14 V 71 h -218 V 59 a 14 14 90 0 1 14 -14" fill="#c6aea5" stroke="#c6aea5" stroke-width="0"/>
+	<path d="M 668 71.0 v 12 a 14 14 90 0 1 -14 14 H 464 a 14 14 90 0 1 -14 -14 V 71.0 H 218" fill="#d3b5b2" stroke="#d3b5b2" stroke-width="0"/>
+	<rect x="450" y="45" width="218" height="52" fill="none" rx="14" stroke="none" stroke-width="1.5"/>
+	<line x1="450" y1="71" x2="668" y2="71" stroke="none" stroke-width="1"/>
+	<text x="529" y="63.6" fill="#422f2c" font-family="Courier New" font-size="14">impacte</text>
+	<text x="457" y="89.6" fill="#57483d" font-family="Courier New" font-size="14">date et heure de constat</text>
+</g>
+
+<!-- Association réserve -->
+<line x1="335" y1="71" x2="120" y2="71" stroke="#57483d" stroke-width="1"/>
+<text x="225" y="87.0" fill="#57483d" font-family="Courier New" font-size="12">0,N</text>
+<line x1="120" y1="201" x2="120" y2="71" stroke="#57483d" stroke-width="1"/>
+<text x="125.0" y="149" fill="#57483d" font-family="Courier New" font-size="12">0,N</text>
+<g id="association-réserve">
+	<path d="M 206 36 a 14 14 90 0 1 14 14 V 62 h -200 V 50 a 14 14 90 0 1 14 -14" fill="#c6aea5" stroke="#c6aea5" stroke-width="0"/>
+	<path d="M 220 62.0 v 30 a 14 14 90 0 1 -14 14 H 34 a 14 14 90 0 1 -14 -14 V 62.0 H 200" fill="#d3b5b2" stroke="#d3b5b2" stroke-width="0"/>
+	<rect x="20" y="36" width="200" height="70" fill="none" rx="14" stroke="none" stroke-width="1.5"/>
+	<line x1="20" y1="62" x2="220" y2="62" stroke="none" stroke-width="1"/>
+	<text x="90" y="54.6" fill="#422f2c" font-family="Courier New" font-size="14">réserve</text>
+	<text x="27" y="80.6" fill="#57483d" font-family="Courier New" font-size="14">nombre de places</text>
+	<text x="27" y="98.6" fill="#57483d" font-family="Courier New" font-size="14">horaire de réservation</text>
+</g>
+
+<!-- Entity ATTRACTION -->
+<g id="entity-ATTRACTION">
+	<g id="frame-ATTRACTION">
+		<rect x="253" y="9" width="164" height="26" fill="#cbcbb5" stroke="#cbcbb5" stroke-width="0"/>
+		<rect x="253" y="35.0" width="164" height="98" fill="#e4e3b4" stroke="#e4e3b4" stroke-width="0"/>
+		<rect x="253" y="9" width="164" height="124" fill="none" stroke="none" stroke-width="1.5"/>
+		<line x1="253" y1="35" x2="417" y2="35" stroke="none" stroke-width="1"/>
+	</g>
+	<text x="292" y="27.6" fill="#422f2c" font-family="Courier New" font-size="14">ATTRACTION</text>
+	<text x="258" y="53.6" fill="#57483d" font-family="Courier New" font-size="14">nom public</text>
+	<line x1="258" y1="56.0" x2="343" y2="56.0" stroke="#57483d" stroke-width="1"/>
+	<text x="258" y="71.6" fill="#57483d" font-family="Courier New" font-size="14">capacité</text>
+	<text x="258" y="89.6" fill="#57483d" font-family="Courier New" font-size="14">heure d'ouverture</text>
+	<text x="258" y="107.6" fill="#57483d" font-family="Courier New" font-size="14">heure de fermeture</text>
+	<text x="258" y="125.6" fill="#57483d" font-family="Courier New" font-size="14">durée</text>
+</g>
+
+<!-- Entity INCIDENT -->
+<g id="entity-INCIDENT">
+	<g id="frame-INCIDENT">
+		<rect x="477" y="148" width="164" height="26" fill="#cbcbb5" stroke="#cbcbb5" stroke-width="0"/>
+		<rect x="477" y="174.0" width="164" height="80" fill="#e4e3b4" stroke="#e4e3b4" stroke-width="0"/>
+		<rect x="477" y="148" width="164" height="106" fill="none" stroke="none" stroke-width="1.5"/>
+		<line x1="477" y1="174" x2="641" y2="174" stroke="none" stroke-width="1"/>
+	</g>
+	<text x="525" y="166.6" fill="#422f2c" font-family="Courier New" font-size="14">INCIDENT</text>
+	<text x="482" y="192.6" fill="#57483d" font-family="Courier New" font-size="14">numéro d'incident</text>
+	<line x1="482" y1="195.0" x2="626" y2="195.0" stroke="#57483d" stroke-width="1"/>
+	<text x="482" y="210.6" fill="#57483d" font-family="Courier New" font-size="14">nature</text>
+	<text x="482" y="228.6" fill="#57483d" font-family="Courier New" font-size="14">technicien assigné</text>
+	<text x="482" y="246.6" fill="#57483d" font-family="Courier New" font-size="14">date de résolution</text>
+</g>
+
+<!-- Entity VISITEUR -->
+<g id="entity-VISITEUR">
+	<g id="frame-VISITEUR">
+		<rect x="9" y="157" width="222" height="26" fill="#cbcbb5" stroke="#cbcbb5" stroke-width="0"/>
+		<rect x="9" y="183.0" width="222" height="62" fill="#e4e3b4" stroke="#e4e3b4" stroke-width="0"/>
+		<rect x="9" y="157" width="222" height="88" fill="none" stroke="none" stroke-width="1.5"/>
+		<line x1="9" y1="183" x2="231" y2="183" stroke="none" stroke-width="1"/>
+	</g>
+	<text x="86" y="175.6" fill="#422f2c" font-family="Courier New" font-size="14">VISITEUR</text>
+	<text x="14" y="201.6" fill="#57483d" font-family="Courier New" font-size="14">numéro de billet</text>
+	<line x1="14" y1="204.0" x2="150" y2="204.0" stroke="#57483d" stroke-width="1"/>
+	<text x="14" y="219.6" fill="#57483d" font-family="Courier New" font-size="14">date de début de validité</text>
+	<text x="14" y="237.6" fill="#57483d" font-family="Courier New" font-size="14">date de fin de validité</text>
+</g>
+</svg>
