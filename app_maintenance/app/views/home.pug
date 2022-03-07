@@ -1,4 +1,9 @@
 include partials/header.pug
-ul
+h1 Liste des incidents
+a(href='/incident/new').open-btn Ouvrir un incident
+ul.incident-list
   each val in incidents
-    li= val.nature
+    li
+      span.incident-id #{val.id}
+      a(href=`/incident/${val.id}`) #{val.attraction}
+      span #{val.nature}

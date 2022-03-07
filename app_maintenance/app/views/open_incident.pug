@@ -1,0 +1,22 @@
+include partials/header.pug
+h1='Ouvrir un incident'
+
+form(action="/incident/new" method="POST")
+
+  div.form-group
+    label(for='nature') Nature:
+    input#nature(type="text" name="nature" placeholder="" required)
+
+  div.form-group
+    label(for='technician') Technicien:
+    input#technician(type="text" name="technician" placeholder="")
+
+  div.form-group
+    label(for='attraction') Attraction
+    select#attraction(name="attraction_id" required)
+      each attraction in attractions
+        option(value=attraction.id) #{attraction.name}
+
+
+  div.form-group
+    input(type="submit")
