@@ -20,6 +20,16 @@ module.exports = {
       next();
     }
   },
+  getEditIncidentById: async (req, res, next) => {
+    const incident = await dataMapper.getIncidentById(req.params.id);
+    const attractions = await dataMapper.getAllAttractions();
+    debug('patchIncidentById called');
+    if (incident) {
+      res.render('edit_incident', { incident, attractions });
+    } else {
+      next();
+    }
+  },
   getOpenIncident: async (_req, res, next) => {
     const attractions = await dataMapper.getAllAttractions();
     debug('getOpenIncident called');
@@ -36,6 +46,23 @@ module.exports = {
     if (newIncident) {
       debug(newIncident.id);
       res.redirect(`/incident/${newIncident.id}`);
+    } else {
+      next();
+    }
+  },
+  patchIncidentById: async (req, res, next) => {
+    if (req.body.end_date) {
+      req.body.end_date = new Date().toLocaleString();
+    } else {
+      req.body.end_date = null;
+    }
+    debug(req.body);
+    debug('patchIncident');
+    const updateIncident = await dataMapper.editIncident(req.body);
+    debug('UpdateIncident called');
+    if (updateIncident) {
+      debug(updateIncident.id);
+      res.redirect(`/incident/${updateIncident.id}`);
     } else {
       next();
     }

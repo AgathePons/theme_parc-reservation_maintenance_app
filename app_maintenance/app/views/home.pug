@@ -1,9 +1,21 @@
 include partials/header.pug
 h1 Liste des incidents
 a(href='/incident/new').open-btn Ouvrir un incident
+
+h2 Incidents ouverts
 ul.incident-list
   each val in incidents
-    li
-      span.incident-id #{val.id}
-      a(href=`/incident/${val.id}`) #{val.attraction}
-      span #{val.nature}
+    if !val.end_date
+      li
+        span.incident-id #{val.id}
+        a(href=`/incident/${val.id}`) #{val.attraction}
+        span #{val.nature}
+
+h2 Incidents fermés
+ul.incident-list
+  each val in incidents
+    if val.end_date
+      li
+        span.incident-id #{val.id}
+        a(href=`/incident/${val.id}`) #{val.attraction}
+        span #{val.nature}
