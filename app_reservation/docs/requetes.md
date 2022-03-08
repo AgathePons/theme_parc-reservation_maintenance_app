@@ -1,3 +1,4 @@
+```SQL
 ----sql
 
 --calcul de créneau
@@ -17,6 +18,5 @@ FROM attraction WHERE id=$2;
 
 $$
 LANGUAGE SQL STRICT;
+```
 
-
-$$

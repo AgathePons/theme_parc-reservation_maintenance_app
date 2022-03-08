@@ -3,15 +3,15 @@
 
 -- Est-ce que l'attraction est en mainteance ?
 -- paramètres : le timestamp, et l'id de l'attraction
-CREATE FUNCTION isItUnderMaintenance(timestamptz, int) RETURNS boolean AS $$
+CREATE FUNCTION isItNotUnderMaintenance(timestamptz, int) RETURNS boolean AS $$
     SELECT
         CASE
             --Regarde si un incident non cloturé existe sur l'id
             WHEN (SELECT end_date FROM incident WHERE id=$2 AND start_date < $1) IS NOT NULL
-            THEN TRUE
+            THEN FALSE
 
     		--sinon retourne faux
-    		ELSE FALSE
+    		ELSE TRUE
     		END
     	FROM attraction WHERE id=$2;
 
