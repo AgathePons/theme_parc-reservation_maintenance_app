@@ -1,0 +1,28 @@
+extends layout.pug
+
+block content
+    div(id="incident")
+        form(method="POST" class="incidentForm")
+            div(class="input")
+                label(for="incident_number") Numéro de l'incident :
+                input(type="text" name="incident_number" id="incident_number")
+            div(class="select")
+                label(for="event_id") Attraction concernée :
+                select(name="event_id" id="event_id")
+                    option(value="" selected=true) Sélectionnez ...
+                    each event of events
+                        option(value=event.id)= event.name
+            div(class="input")
+                label(for="nature") Nature de l'incident :
+                input(type="text" name="nature" id="nature")
+
+            div(class="select")
+                label(for="technician") Incident suivi par :
+                select(name="technician" id="technician")
+                    option(value="" selected=true) Sélectionnez ...
+                    option(value="Nico") Nico
+                    option(value="Yann") Yann
+            div(class="textarea")
+                label(for="comment") Commentaire :
+                textarea(name="comment" id="comment")
+            button(type="submit") Ajouter un l'incident

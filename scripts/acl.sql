@@ -1,0 +1,15 @@
+BEGIN;
+
+DROP USER booking;
+
+CREATE USER booking WITH PASSWORD 'booking';
+GRANT USAGE ON SCHEMA booking TO booking;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA booking TO booking;
+
+DROP USER incident;
+
+CREATE USER incident WITH PASSWORD 'incident';
+GRANT USAGE ON SCHEMA incident TO incident;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA incident TO incident;
+
+COMMIT;

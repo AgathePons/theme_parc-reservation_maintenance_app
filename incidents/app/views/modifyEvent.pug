@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+    div(id="incidents")
+        each event of events
+            div(class="eventDiv")
+                h3(class="incident_event")= event.name
+                form(method="POST" class="eventForm" id="incidentForm"+event.id)
+                    input(type="hidden" name="event_id" value=event.id)
+                    div(class="input")
+                        label(for="opening_hour") Heure d'ouverture :
+                        input(type="time" name="opening_hour" id="opening_hour" value=event.opening_hour)
+                    div(class="input")
+                        label(for="closing_hour") Heure de fermeture :
+                        input(type="time" name="closing_hour" id="closing_hour" value=event.closing_hour)
+                    button(type="submit") Modifier l'attraction

@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title Gestion des incidents oParc
+        link(rel="stylesheet" href="/css/reset.css")
+        link(rel="stylesheet" href="/css/style.css")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet")
+    body
+        div(id="container")
+            header
+                img(src="/images/logo.png")
+                h1 Gestion des incidents
+            main
+                nav
+                    ul
+                        li(class=(page === "incidents" ? "active" : undefined))
+                            a(href="/v1/") Incidents en cours
+                        li(class=(page === "events" ? "active" : undefined))
+                            a(href="/v1/incident/event") Modification d'attraction
+                        li(class=(page === "addIncident" ? "active" : undefined))
+                            a(href="/v1/incident/new") Ajouter un incident
+                block content

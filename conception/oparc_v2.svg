@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="536" height="254" view_box="0 0 536 254"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Mon, 19 Jul 2021 02:54:50</desc>
+
+<rect id="frame" x="0" y="0" width="536" height="254" fill="#ffffbf" stroke="none" stroke-width="0"/>
+
+<!-- Association impacte -->
+<line x1="445" y1="194" x2="445" y2="68" stroke="#f46d43" stroke-width="2"/>
+<text x="450.0" y="135" fill="#4575b4" font-family="Verdana" font-size="12">1,1</text>
+<line x1="264" y1="68" x2="445" y2="68" stroke="#f46d43" stroke-width="2"/>
+<text x="336" y="85.0" fill="#4575b4" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-impacte">
+	<path d="M 513 43 a 14 14 90 0 1 14 14 V 68 h -164 V 57 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 527 68.0 v 11 a 14 14 90 0 1 -14 14 H 377 a 14 14 90 0 1 -14 -14 V 68.0 H 164" fill="#fee090" stroke="#fee090" stroke-width="0"/>
+	<rect x="363" y="43" width="164" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="363" y1="68" x2="527" y2="68" stroke="#f46d43" stroke-width="1"/>
+	<text x="420" y="60.7" fill="#000000" font-family="Verdana" font-size="12">impacte</text>
+	<text x="370" y="85.8" fill="#000000" font-family="Verdana" font-size="12">date et heure de constat</text>
+</g>
+
+<!-- Association réserve -->
+<line x1="264" y1="68" x2="90" y2="68" stroke="#f46d43" stroke-width="2"/>
+<text x="170" y="85.0" fill="#4575b4" font-family="Verdana" font-size="12">0,N</text>
+<line x1="90" y1="194" x2="90" y2="68" stroke="#f46d43" stroke-width="2"/>
+<text x="95.0" y="144" fill="#4575b4" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-réserve">
+	<path d="M 151 34 a 14 14 90 0 1 14 14 V 59 h -150 V 48 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 165 59.0 v 29 a 14 14 90 0 1 -14 14 H 29 a 14 14 90 0 1 -14 -14 V 59.0 H 150" fill="#fee090" stroke="#fee090" stroke-width="0"/>
+	<rect x="15" y="34" width="150" height="68" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="15" y1="59" x2="165" y2="59" stroke="#f46d43" stroke-width="1"/>
+	<text x="67" y="51.7" fill="#000000" font-family="Verdana" font-size="12">réserve</text>
+	<text x="22" y="76.8" fill="#000000" font-family="Verdana" font-size="12">nombre de places</text>
+	<text x="22" y="93.8" fill="#000000" font-family="Verdana" font-size="12">horaire de réservation</text>
+</g>
+
+<!-- Entity ATTRACTION -->
+<g id="entity-ATTRACTION">
+	<g id="frame-ATTRACTION">
+		<rect x="197" y="9" width="134" height="25" fill="#abd9e9" stroke="#abd9e9" stroke-width="0"/>
+		<rect x="197" y="34.0" width="134" height="93" fill="#e0f3f8" stroke="#e0f3f8" stroke-width="0"/>
+		<rect x="197" y="9" width="134" height="118" fill="none" stroke="#74add1" stroke-width="2"/>
+		<line x1="197" y1="34" x2="331" y2="34" stroke="#74add1" stroke-width="1"/>
+	</g>
+	<text x="224" y="26.7" fill="#000000" font-family="Verdana" font-size="12">ATTRACTION</text>
+	<text x="202" y="51.7" fill="#000000" font-family="Verdana" font-size="12">nom public</text>
+	<line x1="202" y1="54" x2="269" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="202" y="68.8" fill="#000000" font-family="Verdana" font-size="12">capacité</text>
+	<text x="202" y="85.8" fill="#000000" font-family="Verdana" font-size="12">heure d'ouverture</text>
+	<text x="202" y="102.8" fill="#000000" font-family="Verdana" font-size="12">durée d'ouverture</text>
+	<text x="202" y="119.8" fill="#000000" font-family="Verdana" font-size="12">durée de l'attraction</text>
+</g>
+
+<!-- Entity INCIDENT -->
+<g id="entity-INCIDENT">
+	<g id="frame-INCIDENT">
+		<rect x="384" y="143" width="122" height="25" fill="#abd9e9" stroke="#abd9e9" stroke-width="0"/>
+		<rect x="384" y="168.0" width="122" height="77" fill="#e0f3f8" stroke="#e0f3f8" stroke-width="0"/>
+		<rect x="384" y="143" width="122" height="102" fill="none" stroke="#74add1" stroke-width="2"/>
+		<line x1="384" y1="168" x2="506" y2="168" stroke="#74add1" stroke-width="1"/>
+	</g>
+	<text x="414" y="160.7" fill="#000000" font-family="Verdana" font-size="12">INCIDENT</text>
+	<text x="389" y="185.7" fill="#000000" font-family="Verdana" font-size="12">numéro d'incident</text>
+	<line x1="389" y1="188" x2="499" y2="188" stroke="#000000" stroke-width="1"/>
+	<text x="389" y="202.8" fill="#000000" font-family="Verdana" font-size="12">nature</text>
+	<text x="389" y="219.8" fill="#000000" font-family="Verdana" font-size="12">technicien assigné</text>
+	<text x="389" y="236.8" fill="#000000" font-family="Verdana" font-size="12">date de résolution</text>
+</g>
+
+<!-- Entity VISITEUR -->
+<g id="entity-VISITEUR">
+	<g id="frame-VISITEUR">
+		<rect x="9" y="152" width="162" height="25" fill="#abd9e9" stroke="#abd9e9" stroke-width="0"/>
+		<rect x="9" y="177.0" width="162" height="59" fill="#e0f3f8" stroke="#e0f3f8" stroke-width="0"/>
+		<rect x="9" y="152" width="162" height="84" fill="none" stroke="#74add1" stroke-width="2"/>
+		<line x1="9" y1="177" x2="171" y2="177" stroke="#74add1" stroke-width="1"/>
+	</g>
+	<text x="60" y="169.7" fill="#000000" font-family="Verdana" font-size="12">VISITEUR</text>
+	<text x="14" y="194.8" fill="#000000" font-family="Verdana" font-size="12">numéro de billet</text>
+	<line x1="14" y1="197" x2="114" y2="197" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="211.8" fill="#000000" font-family="Verdana" font-size="12">date de début de validité</text>
+	<text x="14" y="228.8" fill="#000000" font-family="Verdana" font-size="12">date de fin de validité</text>
+</g>
+</svg>

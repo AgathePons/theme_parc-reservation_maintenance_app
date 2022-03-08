@@ -1,0 +1,25 @@
+extends layout.pug
+
+block content
+    div(id="incident")
+        h3(class="incident_event")= incident.event_name
+        p(class="incident_number") Incident numéro 
+            strong= incident.incident_number
+        p(class="incident_nature")= incident.nature
+        form(method="POST" class="incidentForm")
+            div(class="select")
+                label(for="technician") Incident suivi par :
+                select(name="technician" id="technician")
+                    option(value="Nico" selected= incident.technician === 'Nico') Nico
+                    option(value="Yann" selected= incident.technician === 'Yann') Yann
+            div(class="textarea")
+                label(for="comment") Commentaire :
+                textarea(name="comment" id="comment")
+            each comment of incident.comments
+                div(class="comment")
+                    h4= comment.date
+                    p= comment.text
+            div(class="checkbox")
+                input(type="checkbox" name="close" id="close")
+                label(for="close") Clotûrer l'incident
+            button(type="submit") Mettre l'incident à jour

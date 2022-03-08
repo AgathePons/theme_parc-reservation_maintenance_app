@@ -1,0 +1,33 @@
+@protocol=http://
+@host=localhost
+@port=:3500
+@prefix=/v1
+@baseUrl={{protocol}}{{host}}{{port}}{{prefix}}
+
+### Initialisation client existant
+GET {{baseUrl}}/init/FR1254
+
+### Initialisation client inexistant
+GET {{baseUrl}}/init/FR5432
+
+### Initialisation client ticket expiré
+GET {{baseUrl}}/init/FR1258
+
+
+### Attractions ouvertes
+GET {{baseUrl}}/events/1
+
+### Réservations en cours
+GET {{baseUrl}}/bookings/2
+
+### Nb max de réservations atteint
+PUT {{baseUrl}}/book/1/1/4
+
+### Nouvelle réservation sur une attraction en maintenance
+PUT {{baseUrl}}/book/3/3/4
+
+### Nouvelle réservation sur une attraction dont la prochaine session est pleine pour tester l'horaire suivant
+PUT {{baseUrl}}/book/3/2/4
+
+### Nouvelle réservation sur une attraction pour un ticket qui sera périmé au prochain horaire dispo
+PUT {{baseUrl}}/book/4/2/4

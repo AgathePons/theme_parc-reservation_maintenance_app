@@ -1,0 +1,15 @@
+%syntax-version=1.0.0
+%project=oparc
+
+init 2021-07-16T08:54:55Z Nicoclock <nicolas.charpin@oclock.io> # Mise en place des tables
+3fn 2021-07-16T09:36:14Z Nicoclock <nicolas.charpin@oclock.io> # Respect 3ème forme normale
+identified_visitor 2021-07-18T14:50:17Z Nicoclock <nicolas.charpin@oclock.io> # Vue visiteurs avec infos complémentaires
+opened_events 2021-07-16T10:46:26Z Nicoclock <nicolas.charpin@oclock.io> # Vue pour les attractions ouvertes
+book 2021-07-17T14:49:00Z Nicoclock <nicolas.charpin@oclock.io> # API SQL de réservation
+detailed_incident 2021-07-19T08:21:31Z Nicoclock <nicolas.charpin@oclock.io> # Incidents avec le nom de l'attraction
+handling_incidents 2021-07-19T09:57:32Z Nicoclock <nicolas.charpin@oclock.io> # Ajout table commentaires, mise à jour de la vue
+update_incident 2021-07-19T13:41:11Z Nicoclock <nicolas.charpin@oclock.io> # Fonctions de mise à jour d'incident
+incident_event 2021-07-19T14:13:17Z Nicoclock <nicolas.charpin@oclock.io> # Vue avec id et nom des attractions
+new_incident 2021-07-19T17:04:57Z Nicoclock <nicolas.charpin@oclock.io> # Fonctions de création d'incident
+modify_event 2021-07-20T07:59:33Z Nicoclock <nicolas.charpin@oclock.io> # Modification de la plage d'ouverture d'une attraction
+schemas 2021-07-20T08:51:30Z Nicoclock <nicolas.charpin@oclock.io> # Split de la structure en schémas

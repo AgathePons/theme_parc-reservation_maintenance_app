@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+    div(id="incidents")
+        each incident of incidents
+            a(href="/v1/incident/"+incident.id)
+                div(class="incidentCard")
+                    h3(class="incident_event")= incident.event_name
+                    p(class="incident_nature")= incident.nature
+                    p(class="incident_number") Incident numéro 
+                        strong= incident.incident_number
+                    p(class="incident_technician") Incident géré par 
+                        strong= incident.technician
+                    p(class="incident_openDate") Ouvert depuis le 
+                        em= incident.open_date
+                    p(class="incident_openDate") Dernière mise à jour le 
+                        em= incident.last_update

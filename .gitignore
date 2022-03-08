@@ -1,0 +1,7 @@
+sqitch.conf
+
+bookings/node_modules
+bookings/.env
+
+incidents/node_modules
+incidents/.env

@@ -1,0 +1,7 @@
+réserve, 0N ATTRACTION, 0N VISITEUR: nombre de places, horaire de réservation
+ATTRACTION: nom public, capacité, heure d'ouverture, heure de fermeture, durée
+impacte, 11 INCIDENT, 0N ATTRACTION : date et heure de constat
+
+VISITEUR: numéro de billet, date de début de validité, date de fin de validité
+:
+INCIDENT: numéro d'incident, nature, technicien assigné, date de résolution

@@ -1,0 +1,232 @@
+body {
+    font-family: 'Righteous', cursive;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 100px;
+    z-index: 1;
+    background: url('/images/parc.jpg') no-repeat center/cover;
+    box-shadow: 5px 0 7px black;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin: 10px;
+    max-height: 80%;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-left: 1em;
+    text-shadow: 5px 5px 7px black;
+    flex-grow: 1;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    background: linear-gradient(to top right, #41285b 0%, #ffe9b0 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    height: 50px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+nav li.active a {
+    text-shadow: 5px 5px 7px white;
+}
+
+#incidents {
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.incidentCard {
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 50px;
+}
+
+.incident_event {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+.incident_nature {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px 20px;
+    text-shadow: 3px 3px 5px #41285b;
+}
+
+.incident_technician, .incident_number {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.incident_technician strong, .incident_number strong {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.incident_openDate {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.incident_openDate em {
+    font-style: italic;
+    font-size: 0.8em;
+    color: #666;
+}
+
+#incident .incident_number {
+    text-align: center;
+}
+
+.incidentForm {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    width: 50%;
+    padding: 10px;
+}
+
+.select, .textarea, .input {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.select label {
+    width: 45%;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.select select, .input input {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.textarea label {
+    display: block;
+    text-align: left;
+}
+
+.textarea textarea {
+    display: block;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.comment {
+    width: 90%;
+    margin: 10px auto;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.comment h4 {
+    margin: 10px;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.comment p {
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+.checkbox {
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.incidentForm button {
+    padding: 10px;
+    margin: 20px auto;
+    width: 60%;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.incidentForm button:hover, .eventForm button:hover {
+    color: white;
+    background-color: black;
+}
+
+.eventDiv {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 20px;
+}
+
+
+.eventForm .input input {
+    margin: 0 10px;
+}
+
+.eventForm button {
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.error {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error h2 {
+    padding: 50px 0;
+    font-size: 2em;
+}
+
+.error div {
+    padding: 50px 0;
+    color: red;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px white;
+}
