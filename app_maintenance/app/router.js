@@ -10,5 +10,7 @@ router.get('/incident/new', controllerHandler(incidentsController.getOpenInciden
 router.get('/incident/:id', controllerHandler(incidentsController.getIncidentById));
 
 router.post('/incident/new', controllerHandler(incidentsController.PostNewIncident));
+router.get('/incident/:id/edit', controllerHandler(incidentsController.getEditIncidentById));
+router.post('/incident/:id/edit', controllerHandler(incidentsController.patchIncidentById));
 
 module.exports = router;

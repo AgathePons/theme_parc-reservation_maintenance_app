@@ -1,0 +1,33 @@
+include partials/header.pug
+h1='Ouvrir un incident'
+
+form(action=`/incident/${incident.id}/edit` method="POST")
+
+  div.form-group
+    label(for='nature') Nature:
+    input#nature(type="text" value=`${incident.nature}` name="nature" placeholder="" required)
+
+  div.form-group
+    label(for='technician') Technicien:
+    input#technician(type="text" value=`${incident.technician}` name="technician" placeholder="")
+
+  div.form-group
+    label(for='attraction') Attraction
+    select#attraction(name="attraction_id" required)
+      option(value=incident.attraction_id selected  hidden) #{incident.attraction}
+      each attraction in attractions
+        option(value=attraction.id) #{attraction.name}
+
+  div.form-group
+    label(for='end_date') Fermer l'incident
+    if incident.end_date
+      input#end_date(type="checkbox" name="end_date" checked)
+    else
+      input#end_date(type="checkbox" name="end_date")
+    // si on met pas de value, si cochée : on, sinon rien
+    // input(checked=item.favorite id="favorite" type="checkbox" name="favorite" value="true")
+
+  input#technician(type="number" value=`${incident.id}` name="id" hidden)
+
+  div.form-group
+    input(type="submit")

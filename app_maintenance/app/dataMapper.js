@@ -41,6 +41,23 @@ const dataMapper = {
     }
     return data;
   },
+
+  async editIncident(form) {
+    debug(form);
+    const query = {
+      text: `UPDATE incident
+      SET nature = $1, technician = $2, attraction_id = $3, end_date = $4
+      WHERE incident.id=$5
+      RETURNING *`,
+      values: [form.nature, form.technician, Number(form.attraction_id), form.end_date, Number(form.id)],
+    };
+    const data = (await dataBase.query(query)).rows[0];
+    if (!data) {
+      throw new ApiError('No data found for editIncident POST', 500);
+    }
+    return data;
+  },
+
   async getAllAttractions() {
     const query = 'SELECT * FROM attraction;';
     const data = (await dataBase.query(query)).rows;
