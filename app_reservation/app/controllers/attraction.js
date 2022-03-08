@@ -3,7 +3,6 @@ const { ApiError } = require('../helpers/errorHandler');
 
 const attraction = {
   async getOpenAttractions(_, res) {
-    
     const attractions = await attractionDataMapper.findAllOpenAttractions();
 
     if (!attractions) {
