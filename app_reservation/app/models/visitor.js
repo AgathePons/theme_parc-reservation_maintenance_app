@@ -28,12 +28,12 @@ module.exports = {
     const savedReservation = await client.query(
       `
             INSERT INTO attraction_has_visitor
-            (number_places, reservation_hour, 
-              attraction_id, visitor_id) 
-            VALUES ($1, $2, $3, $4) 
+            (number_places, reservation_hour,
+              attraction_id, visitor_id)
+            VALUES ($1, (SELECT valid_slot($2, $1)), $2,  $3)
             RETURNING *
         `,
-      [reservation.number_places, reservation.reservation_hour, reservation.attraction_id, reservation.visitor_id]
+      [reservation.number_places, reservation.attraction_id, reservation.visitor_id]
     );
 
     return savedReservation.rows[0];

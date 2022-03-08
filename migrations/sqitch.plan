@@ -5,3 +5,4 @@ init 2022-03-07T10:20:21Z AgathePons <student@teleporter> # initial migration
 view_incident_with_attraction 2022-03-07T15:20:00Z AgathePons <student@teleporter> # add a view if incidents with attraction
 opened_attractions_view 2022-03-07T17:44:54Z AgathePons <student@teleporter> # add a view to see opened attractions
 check_max_number_place 2022-03-08T08:12:12Z AgathePons <student@teleporter> # check number place max 4
+next_reservation 2022-03-08T16:35:35Z AgathePons <student@teleporter> # function de la muerte
