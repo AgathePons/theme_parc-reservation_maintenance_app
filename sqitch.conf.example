@@ -3,6 +3,6 @@
 	top_dir = migrations
 	# plan_file = migrations/sqitch.plan
 [engine "pg"]
-	target = db:pg:oparc
+	target = db:pg:<db_name>>
 	# registry = sqitch
 	# client = psql

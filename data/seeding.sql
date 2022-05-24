@@ -1,5 +1,12 @@
 BEGIN;
 
+TRUNCATE
+  attraction,
+  incident,
+  visitor,
+  attraction_has_visitor
+RESTART IDENTITY;
+
 INSERT INTO attraction ("name", "capacity", "open_hour", "close_hour", "duration") 
 VALUES
 ('labyrinthe', 50, '08:00:00','16:00:00','00:30:00'),

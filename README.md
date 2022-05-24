@@ -1,22 +1,33 @@
-# O'parc, un petit parc d'attraction avec de grandes ambitions
+# Theme parc - Management app two in one
 
-Ça y est, on connaît tout ce qu'il nous faut pour coder l'API d'O'parc de A à Z. C'est parti pour 2 jours de code et de SQL non-stop.
+This project is about a fictional Theme Parc.  
+It is made up of two applications:
 
-## Le brief
+- **Maintenance web app**: a maintenance web app that allows to open, edit, and close incidents on attractions
+- **Reservation API**: An API to handle reservation for attractions slots, according to incidents/closed attraction, and remaining tickets available
 
----
+------------------------
 
-:hand: un brief, c'est une explication _en vrac_ d'un projet, ce n'est pas un cahier des charges technique ni un backlog prêt à être dépilé. Il y a presque autant d'informations utiles qu'inutiles et parmi les infos utiles, certaines peuvent l'être dès à présent, d'autres bien plus tard. Ce sont vos connaissances techniques et votre expérience qui vont vous permettre de faire ce tri, ayez confiance en vous :wink:
+## Maintenance web app
 
----
+## Reservation API app
 
-Avant de coder, avant même de concevoir le projet, ça serait bien d'avoir déjà une idée du sujet, non ? Commençons par là.
+## Conception
 
-O'parc, c'est un nouveau parc d'attraction qui va ouvrir ses portes d'ici une vingtaine de jours. Le directeur, Dariusz Paniolù, est une vieille connaissance. On a réussi à le persuader de vous confier la gestion informatique de son parc.
+**MCD**
 
-Son parc est assez unique en son genre car il est ouvert 24h/24 et 7j/7 et propose des attractions changeantes en fonction de l'heure à laquelle on le visite. Il m'a confié un MCD qu'il a réalisé avec un ami compétent dans le domaine, je le glisse dans le dossier [conception](./conception/). Voilà ce qu'il voudrait que vous fassiez pour lui.
+```sql
+réserve, 0N ATTRACTION, 0N VISITEUR: nombre de places, horaire de réservation
+ATTRACTION: nom public, capacité, heure d'ouverture, heure de fermeture, durée
+impacte, 11 INCIDENT, 0N ATTRACTION : date et heure de constat
 
-Je précise tout de suite un point de jargon : Quand Dariusz parle d'attraction, il entend aussi bien des attractions _mécanisées_ (grand huit, train fantôme, manège etc.) que des spectacles (danse, son et lumière, spectacle animalier etc.).
+VISITEUR: numéro de billet, date de début de validité, date de fin de validité
+:
+INCIDENT: numéro d'incident, nature, technicien assigné, date de résolution
+
+```
+
+![MCD](./conception/oparc.svg)
 
 ### Réservation d'attractions
 
@@ -26,11 +37,7 @@ Dariusz rêve de grandeur. Mais il a surtout de vicieux concurrents à secouer t
 
 Les attractions mécanisées, ça s'use. Les spectacles n'ont pas lieu s'il pleut trop. Il faut que les agents de maintenance et les coordinateurs de spectacles puissent intervenir directement sur les heures d'ouverture et de fermeture de n'importe quelle attraction pour en limiter le temps d'ouverture ou les fermer complètement. Et il faudra, bien entendu, que les visiteurs qui avaient réservé lesdites attractions soient prévenus de l'annulation de leur réservation. En temps réel, il y tient.
 
-## Précisions
 
-J'ai mis une team de fronteux sur le développement de l'appli mobile, pas d'inquiétude :relieved: Fournissez-leur une API REST qui fait le taf côté back, ils s'occupent du reste.
-
-Par contre, pour la maintenance, c'est un outil interne, pas besoin de fioritures, des pages HTML ultra-simplistes avec les bonnes données aux bons endroits et ça fera l'affaire. Vous allez donc devoir refaire un peu de HTML et de CSS mais j'ai une solution pour vous faire gagner pas mal de temps :wink:
 
 ## Deux projets, un seul repo, il y a un problème, non ?
 
@@ -38,7 +45,6 @@ Non :slightly_smiling_face: On va faire ce qu'on appelle, dans le jargon git, un
 
 Bon, je vous le présente comme une nouveauté mais en fait, ce qu'on fait depuis le début de la spé API & Data, c'est du monorepo :boom: Eh oui, un dossier `app` avec une appli Node et un dossier `migrations` avec un projet Sqitch dont dépend l'appli Node, c'est bien **deux** projets hébergés sous un même toit.
 
-![Mind blowing](https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif)
 
 Ici, on va regrouper dans ce repo :
 - Un projet Sqitch évidemment, qu'est-ce qu'on ferait sans une base de données ?
