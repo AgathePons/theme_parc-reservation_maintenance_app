@@ -155,6 +155,6 @@ And of course, you have to specify different ports for each app.
 The **[Third Normal form](https://en.wikipedia.org/wiki/Third_normal_form)** (**3NF**) is a database schema design approach for relational databases which uses normalizing principles to reduce the duplication of data, avoid data anomalies, ensure referential integrity, and simplify data management.  
 A database relation is said to meet third normal form standards if all the attributes are functionally dependent on solely the primary key.
 
-### PUG
+### PUG tips
 
 Because the **[PUG](https://pugjs.org/api/getting-started.html)** files are not watched by [node-dev](https://www.npmjs.com/package/node-dev) or [nodemon](https://www.npmjs.com/package/nodemon) because they are not `.js` files, the server restarting does not work when we save them. To force the server restarting, simply `ctrl+S` in a `.js` file, even if nothing has changed in it.
