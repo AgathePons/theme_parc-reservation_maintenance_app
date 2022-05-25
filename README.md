@@ -147,7 +147,7 @@ COMMIT;
 ### Two-in-one app
 
 Because this is a "two-in-one" project, there is one repository (one project to clone), one database (one sqitch to deploy), but **two different applications**. Each application has its own dependencies, and has to have its own server running to work.  
-One the project is cloned, you have to install the dependencies (`npm i`), create the `.env` file... for each application.  
+Once the project is cloned, you have to install the dependencies (`npm i`), create the `.env` file... for each application.  
 And of course, you have to specify different ports for each app.
 
 ### Third Normal Form
