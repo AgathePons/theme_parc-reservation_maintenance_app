@@ -13,12 +13,12 @@ GET http://localhost:3000/api/001/init
 ### Get all booked attractions to come for one visitor by ticket id
 GET http://localhost:3000/api/3/bookings
 
-### Insert object1
+### Insert new booking by ticket name
 POST http://localhost:3000/api/001/book
 content-type: application/json
 
 {
-    "title": "New test insert",
-    "content": "New test insert again",
-    "object2_id": 1
+    "number_places": 2,
+    "attraction_id": 1,
+    "visitor_id": 2
 }
