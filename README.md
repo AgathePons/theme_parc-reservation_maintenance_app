@@ -25,6 +25,13 @@ INCIDENT: numéro d'incident, nature, technicien assigné, date de debut d'incid
 
 ![MCD](./conception/oparc.svg)
 
+**MLD**
+
+ATTRACTION (<ins>id</ins>, name, capacity, open_hour, close_hour, duration)  
+INCIDENT (<ins>id</ins>, nature, technician, end_date, #attraction(id))  
+VISITOR (<ins>id</ins>, ticket, start_date, end_date)  
+ATTRACTION_HAS_VISITOR (<ins>id</ins>, number_places, reservation_hour, #attraction_id(attraction.id), #visitor_id(visitor.id))
+
 ### DB migrations management
 
 To initialize, and migrate the database, we use **[Sqitch](https://sqitch.org/)** (version control management for databases)

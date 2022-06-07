@@ -2,3 +2,4 @@ app_*/node_modules
 app_*/.env
 sqitch.conf
 node_modules
+codeSnap/
